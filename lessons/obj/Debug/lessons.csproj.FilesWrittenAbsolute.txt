@@ -1,0 +1,14 @@
+/Users/fabius/Projects/lessons/lessons/obj/Debug/MonoAndroid,Version=v4.0.3.AssemblyAttribute.cs
+/Users/fabius/Projects/lessons/lessons/bin/Debug/lessons.dll.mdb
+/Users/fabius/Projects/lessons/lessons/bin/Debug/lessons.dll
+/Users/fabius/Projects/lessons/lessons/bin/Debug/lessons.lessons.apk
+/Users/fabius/Projects/lessons/lessons/obj/Debug/android/bin/lessons.lessons.apk
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/layout/main.xml
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/values/strings.xml
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/drawable/icon.png
+/Users/fabius/Projects/lessons/lessons/obj/Debug/R.cs.flag
+/Users/fabius/Projects/lessons/lessons/bin/Debug/lessons.lessons-Signed.apk
+/Users/fabius/Projects/lessons/lessons/obj/Debug/uploadflags.txt
+/Users/fabius/Projects/lessons/lessons/obj/Debug/lessons.dll
+/Users/fabius/Projects/lessons/lessons/obj/Debug/lessons.dll.mdb
+/Users/fabius/Projects/lessons/lessons/obj/Debug/MonoAndroid,Version=v2.3.AssemblyAttribute.cs

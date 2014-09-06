@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">Lessons</string>
+	<string-array name="groups">
+		<item>11ПБ-29к-14</item>
+		<item>9ВМ-50ПУ-10</item>
+		<item>9ИБ-13к-14</item>
+		<item>9ИБ-15-14</item>
+		<item>9ИБ-25-13</item>
+		<item>9ИБ-35-12</item>
+		<item>9ИБ-46-11</item>
+		<item>9ИБ-47К-11</item>
+		<item>9К-16кУП-14</item>
+		<item>9КСК-10УП-14</item>
+		<item>9КСК-20УП-13</item>
+		<item>9КСК-26кУП-13</item>
+		<item>9КСК-30УП-12</item>
+		<item>9КСК-36кУП-12</item>
+		<item>9КСК-40-11</item>
+		<item>9КСК-41УП-11</item>
+		<item>9МТС-12УП-14</item>
+		<item>9МТС-22-13</item>
+		<item>9МТС-32УП-12</item>
+		<item>9МТС-45-11</item>
+		<item>9МТС-57ПУ-10</item>
+		<item>9ПБ-1-14</item>
+		<item>9ПБ-17К-14</item>
+		<item>9ПБ-18К-14</item>
+		<item>9ПБ-19к-14</item>
+		<item>9ПБ-2-13</item>
+		<item>9ПБ-27К-13</item>
+		<item>9ПБ-28К-13</item>
+		<item>9ПБ-3-12</item>
+		<item>9ПБ-37К-12</item>
+		<item>9ПБ-41К-11</item>
+		<item>9ПКС-11УП-14</item>
+		<item>9ПКС-21УП-13</item>
+		<item>9ПКС-31УП-12</item>
+		<item>9ПКС-42УП-11</item>
+		<item>9ПО-52ПУ-10</item>
+		<item>9С-14-14</item>
+		<item>9С-24УП-13</item>
+		<item>9С-34-12</item>
+		<item>9С-44УП-11</item>
+    </string-array>
+    <string-array name="group_codes">
+		<item>2dde824a-2dc9-11e4-9d6d-001e67061034</item>
+		<item>2c6fb898-6d5b-11df-8224-00215d0a4292</item>
+		<item>2dde8249-2dc9-11e4-9d6d-001e67061034</item>
+		<item>f4c22b22-ed2e-11e3-be79-485ab63c1e34</item>
+		<item>a5ca9951-c688-11e2-82c4-00215d0a4292</item>
+		<item>29722ee6-9bf4-11e1-82ae-00215d0a4292</item>
+		<item>38b57f76-91ab-11e0-8290-00215d0a4292</item>
+		<item>fa900ac2-f257-11e1-be99-001e67061034</item>
+		<item>86e17cf5-f9ce-11e3-be79-485ab63c1e34</item>
+		<item>f4c22b1e-ed2e-11e3-be79-485ab63c1e34</item>
+		<item>a5ca994d-c688-11e2-82c4-00215d0a4292</item>
+		<item>a5ca9953-c688-11e2-82c4-00215d0a4292</item>
+		<item>29722ee4-9bf4-11e1-82ae-00215d0a4292</item>
+		<item>29722ee5-9bf4-11e1-82ae-00215d0a4292</item>
+		<item>38b57f74-91ab-11e0-8290-00215d0a4292</item>
+		<item>38b57f75-91ab-11e0-8290-00215d0a4292</item>
+		<item>f4c22b20-ed2e-11e3-be79-485ab63c1e34</item>
+		<item>a5ca994e-c688-11e2-82c4-00215d0a4292</item>
+		<item>29722ee9-9bf4-11e1-82ae-00215d0a4292</item>
+		<item>38b57f7a-91ab-11e0-8290-00215d0a4292</item>
+		<item>2c6fb89a-6d5b-11df-8224-00215d0a4292</item>
+		<item>f4c22b23-ed2e-11e3-be79-485ab63c1e34</item>
+		<item>86e17cf2-f9ce-11e3-be79-485ab63c1e34</item>
+		<item>94d6037e-290c-11e4-9d6d-001e67061034</item>
+		<item>94d6037f-290c-11e4-9d6d-001e67061034</item>
+		<item>a5ca9952-c688-11e2-82c4-00215d0a4292</item>
+		<item>a5ca9960-c688-11e2-82c4-00215d0a4292</item>
+		<item>90f7f039-0faf-11e3-995d-001e67061034</item>
+		<item>29722ee7-9bf4-11e1-82ae-00215d0a4292</item>
+		<item>e994cb07-f1b4-11e1-be99-001e67061034</item>
+		<item>a79c31e9-b851-11e1-82b2-00215d0a4292</item>
+		<item>f4c22b1f-ed2e-11e3-be79-485ab63c1e34</item>
+		<item>a5ca9950-c688-11e2-82c4-00215d0a4292</item>
+		<item>29722ee8-9bf4-11e1-82ae-00215d0a4292</item>
+		<item>38b57f78-91ab-11e0-8290-00215d0a4292</item>
+		<item>2c6fb89b-6d5b-11df-8224-00215d0a4292</item>
+		<item>f4c22b21-ed2e-11e3-be79-485ab63c1e34</item>
+		<item>a5ca994f-c688-11e2-82c4-00215d0a4292</item>
+		<item>29722eea-9bf4-11e1-82ae-00215d0a4292</item>
+		<item>38b57f79-91ab-11e0-8290-00215d0a4292</item>
+    </string-array>
+</resources>
+	
