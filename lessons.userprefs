@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets">
+  <MonoDevelop.Ide.Workbench ActiveDocument="lessons/MainActivity.cs">
     <Files>
       <File FileName="lessons/Resources/Resource.designer.cs" Line="1" Column="1" />
-      <File FileName="lessons/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="lessons/MainActivity.cs" Line="91" Column="1" />
       <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -11,5 +11,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.lessons MonoForAntroid.PreferredDevice="Galaxy Nexus" AndroidDeviceId-Debug="192.168.56.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.lessons MonoForAntroid.PreferredDevice="Galaxy Nexus" AndroidDeviceId-Debug="192.168.56.101:5555" MonoForAntroid.PreferredTheme="Theme.Holo" />
 </Properties>
