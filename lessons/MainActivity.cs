@@ -15,6 +15,8 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using Java.Net;
 using System.ComponentModel;
+using Android.Util;
+using System.ComponentModel.Design;
 
 
 
@@ -31,7 +33,27 @@ namespace lessons
 		static Context context;
 		static ViewSwitcher viewSwitcher; //вью свитчер, отвечающий за главный экран и экран расписания
 		static System.Threading.Thread LoadThread; //Поток, отвечающий за загрузку расписания
+		static ViewSwitcher mainViewSwitcher;
 
+		public override bool OnPrepareOptionsMenu(IMenu menu) {
+			MenuInflater.Inflate(Resource.Menu.actionbar, menu);
+			return base.OnPrepareOptionsMenu(menu);
+		}
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			if (item.ItemId==Resource.Id.overflow) {
+				showPopup (FindViewById<View> (Resource.Id.overflow));
+				return true;
+			}
+			return base.OnOptionsItemSelected (item);
+		}
+		//public override bool OnMenuItemClick(IMenuItem item)
+		public void showPopup(View v){
+			PopupMenu popup = new PopupMenu (this, v);
+			MenuInflater inflater = popup.MenuInflater;
+			popup.Inflate (Resource.Menu.popup);
+			popup.Show ();
+		}
 		protected override void OnCreate (Bundle bundle)
 		{
 			context = this;
@@ -42,21 +64,25 @@ namespace lessons
 			SetContentView (Resource.Layout.Main);
 			//RequestWindowFeature (WindowFeatures.NoTitle);
 			text = FindViewById<TextView> (Resource.Id.text);
+			DatePicker datePicker = FindViewById<DatePicker> (Resource.Id.datePicker);
 			Button today = FindViewById<Button> (Resource.Id.today);
 			Button tomorrow = FindViewById<Button> (Resource.Id.tomorrow);
 			Button OnDate = FindViewById<Button> (Resource.Id.toDate);
+			//	Button settings = FindViewById<Button> (Resource.Id.settingsButton);
+			mainViewSwitcher = FindViewById<ViewSwitcher> (Resource.Id.viewSwitcherMain);
 			spinner = FindViewById<Spinner> (Resource.Id.spinner1);
 			viewSwitcher = FindViewById<ViewSwitcher> (Resource.Id.viewSwitcher1);
 			DateTime dateToday = DateTime.Today;
 			DateTime dateTomorrow = DateTime.Today.AddDays (1);
-			DatePicker datePicker = FindViewById<DatePicker> (Resource.Id.datePicker);
 			ConnectivityManager cm = (ConnectivityManager)GetSystemService (Context.ConnectivityService);
 
 			spinner.SetSelection (loadingGroup ());
 
 		
 			//Обработчики нажатий кнопок
-
+//			settings.Click += delegate { //Открытие экрана настроек			
+//				mainViewSwitcher.ShowNext();
+//			};
 			today.Click += delegate { //На сегодня
 				savingGroup (spinner.SelectedItemPosition);
 				if (cm.ActiveNetworkInfo != null) { //Если присутствует соединение с интернетом - запустить функцию, 
@@ -64,6 +90,7 @@ namespace lessons
 				} else {
 					text.Text = "Проверьте соединение с интернетом";//Иначе, выводит ошибку
 					viewSwitcher.ShowNext ();
+
 				}
 
 			};
@@ -74,8 +101,9 @@ namespace lessons
 				} else {
 					text.Text = "Проверьте соединение с интернетом";
 					viewSwitcher.ShowNext ();
-				}
 
+				}
+				
 			};
 			OnDate.Click += delegate {//На дату
 				savingGroup (spinner.SelectedItemPosition);
@@ -84,11 +112,11 @@ namespace lessons
 				} else {
 					text.Text = "Проверьте соединение с интернетом";
 					viewSwitcher.ShowNext ();
+
 				}
-
 			};
-		}
 
+		}
 		//Функция, строящая путь к расписанию, на основании выбора даты и группы
 
 		protected void StartLoadingThread (DateTime date)
@@ -107,6 +135,7 @@ namespace lessons
 			progressDialog.DismissEvent += delegate {
 				if (!LoadThread.IsAlive) {
 					viewSwitcher.ShowNext ();
+
 					text.Text = output;
 				} else
 				LoadThread.Abort ();
@@ -136,8 +165,14 @@ namespace lessons
 			//При нажатии физической кнопки назад, возвращает на главный экран
 			if (keyCode == Keycode.Back) {
 				ViewSwitcher viewSwitcher = FindViewById<ViewSwitcher> (Resource.Id.viewSwitcher1); 
-				if (viewSwitcher.CurrentView != viewSwitcher.GetChildAt (0))
+				ViewSwitcher viewSwitcherMain = FindViewById<ViewSwitcher> (Resource.Id.viewSwitcherMain); 
+				if (viewSwitcher.CurrentView != viewSwitcher.GetChildAt (0)) {
 					viewSwitcher.ShowPrevious ();
+
+				} else if (viewSwitcherMain.CurrentView != viewSwitcherMain.GetChildAt (0)) {
+					viewSwitcherMain.ShowPrevious ();
+
+				}
 				return true;
 			} else
 				return base.OnKeyUp (keyCode, e);

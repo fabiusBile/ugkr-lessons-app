@@ -64,7 +64,10 @@ namespace lessons
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int ic_action_overflow = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Icon = 2130837505;
 			
 			static Drawable()
 			{
@@ -79,38 +82,74 @@ namespace lessons
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060008
-			public const int datePicker = 2131099656;
+			// aapt resource value: 0x7f070014
+			public const int about = 2131165204;
 			
-			// aapt resource value: 0x7f060000
-			public const int linearLayout1 = 2131099648;
+			// aapt resource value: 0x7f070016
+			public const int bells = 2131165206;
 			
-			// aapt resource value: 0x7f060002
-			public const int main = 2131099650;
+			// aapt resource value: 0x7f070008
+			public const int datePicker = 2131165192;
 			
-			// aapt resource value: 0x7f060007
-			public const int progressBar1 = 2131099655;
+			// aapt resource value: 0x7f070000
+			public const int linearLayout1 = 2131165184;
 			
-			// aapt resource value: 0x7f060009
-			public const int rasp = 2131099657;
+			// aapt resource value: 0x7f070003
+			public const int main = 2131165187;
 			
-			// aapt resource value: 0x7f060003
-			public const int spinner1 = 2131099651;
+			// aapt resource value: 0x7f070015
+			public const int overflow = 2131165205;
 			
-			// aapt resource value: 0x7f06000a
-			public const int text = 2131099658;
+			// aapt resource value: 0x7f070011
+			public const int radioButton1 = 2131165201;
 			
-			// aapt resource value: 0x7f060006
-			public const int toDate = 2131099654;
+			// aapt resource value: 0x7f070012
+			public const int radioButton2 = 2131165202;
 			
-			// aapt resource value: 0x7f060004
-			public const int today = 2131099652;
+			// aapt resource value: 0x7f070010
+			public const int radioGroup1 = 2131165200;
 			
-			// aapt resource value: 0x7f060005
-			public const int tomorrow = 2131099653;
+			// aapt resource value: 0x7f070009
+			public const int rasp = 2131165193;
 			
-			// aapt resource value: 0x7f060001
-			public const int viewSwitcher1 = 2131099649;
+			// aapt resource value: 0x7f070013
+			public const int saveForToday = 2131165203;
+			
+			// aapt resource value: 0x7f07000b
+			public const int settings = 2131165195;
+			
+			// aapt resource value: 0x7f070004
+			public const int spinner1 = 2131165188;
+			
+			// aapt resource value: 0x7f07000e
+			public const int students = 2131165198;
+			
+			// aapt resource value: 0x7f07000f
+			public const int teachers = 2131165199;
+			
+			// aapt resource value: 0x7f07000a
+			public const int text = 2131165194;
+			
+			// aapt resource value: 0x7f07000c
+			public const int textView1 = 2131165196;
+			
+			// aapt resource value: 0x7f070007
+			public const int toDate = 2131165191;
+			
+			// aapt resource value: 0x7f070005
+			public const int today = 2131165189;
+			
+			// aapt resource value: 0x7f070006
+			public const int tomorrow = 2131165190;
+			
+			// aapt resource value: 0x7f07000d
+			public const int type = 2131165197;
+			
+			// aapt resource value: 0x7f070002
+			public const int viewSwitcher1 = 2131165186;
+			
+			// aapt resource value: 0x7f070001
+			public const int viewSwitcherMain = 2131165185;
 			
 			static Id()
 			{
@@ -134,6 +173,25 @@ namespace lessons
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int actionbar = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int popup = 2131099649;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}

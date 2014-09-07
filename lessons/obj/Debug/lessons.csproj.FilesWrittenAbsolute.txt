@@ -11,4 +11,9 @@
 /Users/fabius/Projects/lessons/lessons/obj/Debug/uploadflags.txt
 /Users/fabius/Projects/lessons/lessons/obj/Debug/lessons.dll
 /Users/fabius/Projects/lessons/lessons/obj/Debug/lessons.dll.mdb
-/Users/fabius/Projects/lessons/lessons/obj/Debug/MonoAndroid,Version=v2.3.AssemblyAttribute.cs
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/drawable-hdpi/ic_action_overflow.png
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/drawable-mdpi/ic_action_overflow.png
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/drawable-xhdpi/ic_action_overflow.png
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/drawable-xxhdpi/ic_action_overflow.png
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/menu/actionbar.xml
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/menu/popup.xml
