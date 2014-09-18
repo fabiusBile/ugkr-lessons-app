@@ -82,74 +82,233 @@ namespace lessons
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070014
-			public const int about = 2131165204;
+			// aapt resource value: 0x7f070048
+			public const int about = 2131165256;
 			
-			// aapt resource value: 0x7f070016
-			public const int bells = 2131165206;
+			// aapt resource value: 0x7f07004b
+			public const int bells = 2131165259;
 			
-			// aapt resource value: 0x7f070008
-			public const int datePicker = 2131165192;
+			// aapt resource value: 0x7f070046
+			public const int calendar = 2131165254;
+			
+			// aapt resource value: 0x7f07003d
+			public const int datePicker = 2131165245;
+			
+			// aapt resource value: 0x7f070044
+			public const int dateSelectType = 2131165252;
+			
+			// aapt resource value: 0x7f070035
+			public const int linearLayout1 = 2131165237;
+			
+			// aapt resource value: 0x7f070038
+			public const int main = 2131165240;
+			
+			// aapt resource value: 0x7f070049
+			public const int overflow = 2131165257;
+			
+			// aapt resource value: 0x7f070045
+			public const int picker = 2131165253;
+			
+			// aapt resource value: 0x7f07003e
+			public const int rasp = 2131165246;
+			
+			// aapt resource value: 0x7f070047
+			public const int saveForToday = 2131165255;
 			
 			// aapt resource value: 0x7f070000
-			public const int linearLayout1 = 2131165184;
+			public const int scrollView1 = 2131165184;
 			
-			// aapt resource value: 0x7f070003
-			public const int main = 2131165187;
+			// aapt resource value: 0x7f07004a
+			public const int settings = 2131165258;
 			
-			// aapt resource value: 0x7f070015
-			public const int overflow = 2131165205;
+			// aapt resource value: 0x7f070039
+			public const int spinner1 = 2131165241;
 			
-			// aapt resource value: 0x7f070011
-			public const int radioButton1 = 2131165201;
-			
-			// aapt resource value: 0x7f070012
-			public const int radioButton2 = 2131165202;
-			
-			// aapt resource value: 0x7f070010
-			public const int radioGroup1 = 2131165200;
-			
-			// aapt resource value: 0x7f070009
-			public const int rasp = 2131165193;
-			
-			// aapt resource value: 0x7f070013
-			public const int saveForToday = 2131165203;
-			
-			// aapt resource value: 0x7f07000b
-			public const int settings = 2131165195;
-			
-			// aapt resource value: 0x7f070004
-			public const int spinner1 = 2131165188;
-			
-			// aapt resource value: 0x7f07000e
-			public const int students = 2131165198;
-			
-			// aapt resource value: 0x7f07000f
-			public const int teachers = 2131165199;
-			
-			// aapt resource value: 0x7f07000a
-			public const int text = 2131165194;
-			
-			// aapt resource value: 0x7f07000c
-			public const int textView1 = 2131165196;
-			
-			// aapt resource value: 0x7f070007
-			public const int toDate = 2131165191;
-			
-			// aapt resource value: 0x7f070005
-			public const int today = 2131165189;
-			
-			// aapt resource value: 0x7f070006
-			public const int tomorrow = 2131165190;
-			
-			// aapt resource value: 0x7f07000d
-			public const int type = 2131165197;
-			
-			// aapt resource value: 0x7f070002
-			public const int viewSwitcher1 = 2131165186;
+			// aapt resource value: 0x7f070042
+			public const int students = 2131165250;
 			
 			// aapt resource value: 0x7f070001
-			public const int viewSwitcherMain = 2131165185;
+			public const int tableLayout1 = 2131165185;
+			
+			// aapt resource value: 0x7f070003
+			public const int tableRow1 = 2131165187;
+			
+			// aapt resource value: 0x7f070023
+			public const int tableRow10 = 2131165219;
+			
+			// aapt resource value: 0x7f070026
+			public const int tableRow11 = 2131165222;
+			
+			// aapt resource value: 0x7f070029
+			public const int tableRow12 = 2131165225;
+			
+			// aapt resource value: 0x7f07002c
+			public const int tableRow13 = 2131165228;
+			
+			// aapt resource value: 0x7f07002f
+			public const int tableRow14 = 2131165231;
+			
+			// aapt resource value: 0x7f070032
+			public const int tableRow15 = 2131165234;
+			
+			// aapt resource value: 0x7f070020
+			public const int tableRow16 = 2131165216;
+			
+			// aapt resource value: 0x7f070006
+			public const int tableRow2 = 2131165190;
+			
+			// aapt resource value: 0x7f070009
+			public const int tableRow3 = 2131165193;
+			
+			// aapt resource value: 0x7f07000d
+			public const int tableRow4 = 2131165197;
+			
+			// aapt resource value: 0x7f070010
+			public const int tableRow5 = 2131165200;
+			
+			// aapt resource value: 0x7f070013
+			public const int tableRow6 = 2131165203;
+			
+			// aapt resource value: 0x7f070016
+			public const int tableRow7 = 2131165206;
+			
+			// aapt resource value: 0x7f070019
+			public const int tableRow8 = 2131165209;
+			
+			// aapt resource value: 0x7f07001d
+			public const int tableRow9 = 2131165213;
+			
+			// aapt resource value: 0x7f070043
+			public const int teachers = 2131165251;
+			
+			// aapt resource value: 0x7f07003f
+			public const int text = 2131165247;
+			
+			// aapt resource value: 0x7f070040
+			public const int textView1 = 2131165248;
+			
+			// aapt resource value: 0x7f070004
+			public const int textView51 = 2131165188;
+			
+			// aapt resource value: 0x7f070005
+			public const int textView52 = 2131165189;
+			
+			// aapt resource value: 0x7f070007
+			public const int textView53 = 2131165191;
+			
+			// aapt resource value: 0x7f070008
+			public const int textView54 = 2131165192;
+			
+			// aapt resource value: 0x7f07000a
+			public const int textView55 = 2131165194;
+			
+			// aapt resource value: 0x7f07000b
+			public const int textView56 = 2131165195;
+			
+			// aapt resource value: 0x7f07000e
+			public const int textView57 = 2131165198;
+			
+			// aapt resource value: 0x7f07000f
+			public const int textView58 = 2131165199;
+			
+			// aapt resource value: 0x7f070011
+			public const int textView59 = 2131165201;
+			
+			// aapt resource value: 0x7f070012
+			public const int textView60 = 2131165202;
+			
+			// aapt resource value: 0x7f070014
+			public const int textView61 = 2131165204;
+			
+			// aapt resource value: 0x7f070015
+			public const int textView62 = 2131165205;
+			
+			// aapt resource value: 0x7f070017
+			public const int textView63 = 2131165207;
+			
+			// aapt resource value: 0x7f070018
+			public const int textView64 = 2131165208;
+			
+			// aapt resource value: 0x7f07001a
+			public const int textView65 = 2131165210;
+			
+			// aapt resource value: 0x7f07001b
+			public const int textView66 = 2131165211;
+			
+			// aapt resource value: 0x7f07001e
+			public const int textView67 = 2131165214;
+			
+			// aapt resource value: 0x7f07001f
+			public const int textView68 = 2131165215;
+			
+			// aapt resource value: 0x7f070027
+			public const int textView69 = 2131165223;
+			
+			// aapt resource value: 0x7f070025
+			public const int textView70 = 2131165221;
+			
+			// aapt resource value: 0x7f07002d
+			public const int textView71 = 2131165229;
+			
+			// aapt resource value: 0x7f07002b
+			public const int textView72 = 2131165227;
+			
+			// aapt resource value: 0x7f070030
+			public const int textView73 = 2131165232;
+			
+			// aapt resource value: 0x7f07002e
+			public const int textView74 = 2131165230;
+			
+			// aapt resource value: 0x7f070033
+			public const int textView75 = 2131165235;
+			
+			// aapt resource value: 0x7f070031
+			public const int textView76 = 2131165233;
+			
+			// aapt resource value: 0x7f070024
+			public const int textView85 = 2131165220;
+			
+			// aapt resource value: 0x7f070022
+			public const int textView86 = 2131165218;
+			
+			// aapt resource value: 0x7f07002a
+			public const int textView87 = 2131165226;
+			
+			// aapt resource value: 0x7f070028
+			public const int textView88 = 2131165224;
+			
+			// aapt resource value: 0x7f070002
+			public const int textView90 = 2131165186;
+			
+			// aapt resource value: 0x7f07001c
+			public const int textView91 = 2131165212;
+			
+			// aapt resource value: 0x7f07000c
+			public const int textView92 = 2131165196;
+			
+			// aapt resource value: 0x7f070034
+			public const int textView94 = 2131165236;
+			
+			// aapt resource value: 0x7f070021
+			public const int textView95 = 2131165217;
+			
+			// aapt resource value: 0x7f07003c
+			public const int toDate = 2131165244;
+			
+			// aapt resource value: 0x7f07003a
+			public const int today = 2131165242;
+			
+			// aapt resource value: 0x7f07003b
+			public const int tomorrow = 2131165243;
+			
+			// aapt resource value: 0x7f070041
+			public const int type = 2131165249;
+			
+			// aapt resource value: 0x7f070037
+			public const int viewSwitcher1 = 2131165239;
+			
+			// aapt resource value: 0x7f070036
+			public const int viewSwitcherMain = 2131165238;
 			
 			static Id()
 			{
@@ -165,7 +324,13 @@ namespace lessons
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int bells = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Settings = 2130903042;
 			
 			static Layout()
 			{

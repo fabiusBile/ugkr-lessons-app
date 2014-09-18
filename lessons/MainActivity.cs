@@ -17,6 +17,7 @@ using Java.Net;
 using System.ComponentModel;
 using Android.Util;
 using System.ComponentModel.Design;
+using Android;
 
 
 
@@ -33,7 +34,7 @@ namespace lessons
 		static Context context;
 		static ViewSwitcher viewSwitcher; //вью свитчер, отвечающий за главный экран и экран расписания
 		static System.Threading.Thread LoadThread; //Поток, отвечающий за загрузку расписания
-		static ViewSwitcher mainViewSwitcher;
+		public DatePicker datePicker;
 
 		public override bool OnPrepareOptionsMenu(IMenu menu) {
 			MenuInflater.Inflate(Resource.Menu.actionbar, menu);
@@ -52,6 +53,17 @@ namespace lessons
 			PopupMenu popup = new PopupMenu (this, v);
 			MenuInflater inflater = popup.MenuInflater;
 			popup.Inflate (Resource.Menu.popup);
+			popup.MenuItemClick += (s1,item) => {
+				switch(item.Item.ItemId){
+				case Resource.Id.settings:
+					Intent i = new Intent(this,typeof(Settings));
+						StartActivity(i);
+					break;
+				case Resource.Id.bells:
+					StartActivity(new Intent(this,typeof(bells)));
+					break;
+				}
+			};
 			popup.Show ();
 		}
 		protected override void OnCreate (Bundle bundle)
@@ -62,14 +74,14 @@ namespace lessons
 			base.OnCreate (bundle);
 
 			SetContentView (Resource.Layout.Main);
+			Button about = FindViewById<Button> (Resource.Id.about);
 			//RequestWindowFeature (WindowFeatures.NoTitle);
 			text = FindViewById<TextView> (Resource.Id.text);
-			DatePicker datePicker = FindViewById<DatePicker> (Resource.Id.datePicker);
+			datePicker = FindViewById<DatePicker> (Resource.Id.datePicker);
 			Button today = FindViewById<Button> (Resource.Id.today);
 			Button tomorrow = FindViewById<Button> (Resource.Id.tomorrow);
 			Button OnDate = FindViewById<Button> (Resource.Id.toDate);
-			//	Button settings = FindViewById<Button> (Resource.Id.settingsButton);
-			mainViewSwitcher = FindViewById<ViewSwitcher> (Resource.Id.viewSwitcherMain);
+			//	Button settings = FindViewById<Button> (Resource.Id.settingsButton)
 			spinner = FindViewById<Spinner> (Resource.Id.spinner1);
 			viewSwitcher = FindViewById<ViewSwitcher> (Resource.Id.viewSwitcher1);
 			DateTime dateToday = DateTime.Today;
@@ -80,9 +92,6 @@ namespace lessons
 
 		
 			//Обработчики нажатий кнопок
-//			settings.Click += delegate { //Открытие экрана настроек			
-//				mainViewSwitcher.ShowNext();
-//			};
 			today.Click += delegate { //На сегодня
 				savingGroup (spinner.SelectedItemPosition);
 				if (cm.ActiveNetworkInfo != null) { //Если присутствует соединение с интернетом - запустить функцию, 

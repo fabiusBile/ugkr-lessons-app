@@ -17,3 +17,5 @@
 /Users/fabius/Projects/lessons/lessons/obj/Debug/res/drawable-xxhdpi/ic_action_overflow.png
 /Users/fabius/Projects/lessons/lessons/obj/Debug/res/menu/actionbar.xml
 /Users/fabius/Projects/lessons/lessons/obj/Debug/res/menu/popup.xml
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/layout/settings.xml
+/Users/fabius/Projects/lessons/lessons/obj/Debug/res/layout/bells.xml
