@@ -18,6 +18,7 @@ using System.ComponentModel;
 using Android.Util;
 using System.ComponentModel.Design;
 using Android;
+using Java.Sql;
 
 
 
@@ -35,6 +36,8 @@ namespace lessons
 		static ViewSwitcher viewSwitcher; //вью свитчер, отвечающий за главный экран и экран расписания
 		static System.Threading.Thread LoadThread; //Поток, отвечающий за загрузку расписания
 		public DatePicker datePicker;
+		public bool type=true;// true - для студентов, false - для преподавателей 
+
 
 		public override bool OnPrepareOptionsMenu(IMenu menu) {
 			MenuInflater.Inflate(Resource.Menu.actionbar, menu);
@@ -66,6 +69,10 @@ namespace lessons
 			};
 			popup.Show ();
 		}
+		protected override  void OnResume (){
+			base.OnResume ();
+			UpdateSettings ();
+		}
 		protected override void OnCreate (Bundle bundle)
 		{
 			context = this;
@@ -74,7 +81,6 @@ namespace lessons
 			base.OnCreate (bundle);
 
 			SetContentView (Resource.Layout.Main);
-			Button about = FindViewById<Button> (Resource.Id.about);
 			//RequestWindowFeature (WindowFeatures.NoTitle);
 			text = FindViewById<TextView> (Resource.Id.text);
 			datePicker = FindViewById<DatePicker> (Resource.Id.datePicker);
@@ -88,6 +94,8 @@ namespace lessons
 			DateTime dateTomorrow = DateTime.Today.AddDays (1);
 			ConnectivityManager cm = (ConnectivityManager)GetSystemService (Context.ConnectivityService);
 
+			UpdateSettings ();
+
 			spinner.SetSelection (loadingGroup ());
 
 		
@@ -95,7 +103,12 @@ namespace lessons
 			today.Click += delegate { //На сегодня
 				savingGroup (spinner.SelectedItemPosition);
 				if (cm.ActiveNetworkInfo != null) { //Если присутствует соединение с интернетом - запустить функцию, 
-					StartLoadingThread (dateToday);// получающую расписание с сайта
+					if (GetPreferences (FileCreationMode.Private).GetLong("todayDate",(DateTime.Today.ToBinary() -1))!=dateToday.ToBinary()){
+						StartLoadingThread (dateToday);// получающую расписание с сайта
+					} else{
+						text.Text=GetPreferences (FileCreationMode.Private).GetString("ForToday","Расписание на сегодня отсутствует");
+						viewSwitcher.ShowNext ();
+					}
 				} else {
 					text.Text = "Проверьте соединение с интернетом";//Иначе, выводит ошибку
 					viewSwitcher.ShowNext ();
@@ -131,8 +144,8 @@ namespace lessons
 		protected void StartLoadingThread (DateTime date)
 		{
 			//Построение урл
-			string url = "http://study.ugkr.ru/rasp.php?act=1&group=" + groups [spinner.SelectedItemId] + "&date=" + date.Year.ToString () + '-' + date.Month.ToString () + '-' + date.Day.ToString (); 
-			if (date.ToBinary () == DateTime.Today.ToBinary ()) //В зависимости от даты, будет написано "расписание на сегодня",
+			string url = "http://study.ugkr.ru/rasp.php" + groups [spinner.SelectedItemId] + "&date=" + date.Year.ToString () + '-' + date.Month.ToString () + '-' + date.Day.ToString (); 
+			if (date.ToBinary () == DateTime.Today.ToBinary ())  //В зависимости от даты, будет написано "расписание на сегодня",
 				curDate = "сегодня";							// "расписание на завтра" или "расписание на дату..."
 			else if (date.ToBinary () == DateTime.Today.AddDays (1).ToBinary ())
 				curDate = "завтра";
@@ -144,8 +157,10 @@ namespace lessons
 			progressDialog.DismissEvent += delegate {
 				if (!LoadThread.IsAlive) {
 					viewSwitcher.ShowNext ();
-
 					text.Text = output;
+					if (date==DateTime.Today){
+						SaveForToday(output);
+					}
 				} else
 				LoadThread.Abort ();
 			};
@@ -153,14 +168,30 @@ namespace lessons
 			//путь до страницы с ним и всплывающее окно загрузки
 
 		}
-
-		public void savingGroup (int index)
+		public void SaveForToday(string data){
+				long today = DateTime.Today.ToBinary();
+				GetPreferences (FileCreationMode.Private).Edit ().PutString ("ForToday", data).Commit ();
+				GetPreferences (FileCreationMode.Private).Edit ().PutLong ("todayDate", today).Commit ();
+				GetPreferences (FileCreationMode.Private).Edit ().PutBoolean ("todayType", type).Commit ();
+				GetPreferences (FileCreationMode.Private).Edit ().PutLong ("todayId", spinner.SelectedItemId).Commit ();
+		}
+		public  void UpdateSettings(){
+			if (loadPref ("date")) {
+				datePicker.SpinnersShown = false;
+				datePicker.CalendarViewShown = true;
+			}
+			else {
+				datePicker.SpinnersShown = true;
+				datePicker.CalendarViewShown = false;
+			}
+		}
+		public  void savingGroup (int index)
 		{
 			//Сохраняет выбор группы 
 			GetPreferences (FileCreationMode.Private).Edit ().PutInt ("curentGroup", index).Commit ();
 		}
 
-		public int loadingGroup ()
+		public  int loadingGroup ()
 		{
 			//Если пользователь ранее выбирал группу - при последуещем открытии приложения, она будет вновь выбранна 
 			if (GetPreferences (FileCreationMode.Private).Contains ("curentGroup"))
@@ -168,7 +199,13 @@ namespace lessons
 			else
 				return 0;
 		}
-
+		public bool loadPref (string name)
+		{
+			if (GetSharedPreferences ("Settings",FileCreationMode.Private).Contains (name))
+				return	GetSharedPreferences ("Settings",FileCreationMode.Private).GetBoolean (name,false);
+			else
+				return false;
+		}
 		public override bool OnKeyUp (Keycode keyCode, KeyEvent e)
 		{
 			//При нажатии физической кнопки назад, возвращает на главный экран

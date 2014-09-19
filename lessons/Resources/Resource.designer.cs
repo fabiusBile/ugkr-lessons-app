@@ -37,6 +37,12 @@ namespace lessons
 			// aapt resource value: 0x7f050000
 			public const int groups = 2131034112;
 			
+			// aapt resource value: 0x7f050002
+			public const int teachers = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int teachers_codes = 2131034115;
+			
 			static Array()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -82,11 +88,11 @@ namespace lessons
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070048
-			public const int about = 2131165256;
+			// aapt resource value: 0x7f070047
+			public const int about = 2131165255;
 			
-			// aapt resource value: 0x7f07004b
-			public const int bells = 2131165259;
+			// aapt resource value: 0x7f07004a
+			public const int bells = 2131165258;
 			
 			// aapt resource value: 0x7f070046
 			public const int calendar = 2131165254;
@@ -103,8 +109,8 @@ namespace lessons
 			// aapt resource value: 0x7f070038
 			public const int main = 2131165240;
 			
-			// aapt resource value: 0x7f070049
-			public const int overflow = 2131165257;
+			// aapt resource value: 0x7f070048
+			public const int overflow = 2131165256;
 			
 			// aapt resource value: 0x7f070045
 			public const int picker = 2131165253;
@@ -112,14 +118,11 @@ namespace lessons
 			// aapt resource value: 0x7f07003e
 			public const int rasp = 2131165246;
 			
-			// aapt resource value: 0x7f070047
-			public const int saveForToday = 2131165255;
-			
 			// aapt resource value: 0x7f070000
 			public const int scrollView1 = 2131165184;
 			
-			// aapt resource value: 0x7f07004a
-			public const int settings = 2131165258;
+			// aapt resource value: 0x7f070049
+			public const int settings = 2131165257;
 			
 			// aapt resource value: 0x7f070039
 			public const int spinner1 = 2131165241;

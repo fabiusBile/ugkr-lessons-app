@@ -11,6 +11,8 @@ public final class R {
     public static final class array {
         public static final int group_codes=0x7f050001;
         public static final int groups=0x7f050000;
+        public static final int teachers=0x7f050002;
+        public static final int teachers_codes=0x7f050003;
     }
     public static final class attr {
     }
@@ -19,19 +21,18 @@ public final class R {
         public static final int icon=0x7f020001;
     }
     public static final class id {
-        public static final int about=0x7f070048;
-        public static final int bells=0x7f07004b;
+        public static final int about=0x7f070047;
+        public static final int bells=0x7f07004a;
         public static final int calendar=0x7f070046;
         public static final int datePicker=0x7f07003d;
         public static final int dateSelectType=0x7f070044;
         public static final int linearLayout1=0x7f070035;
         public static final int main=0x7f070038;
-        public static final int overflow=0x7f070049;
+        public static final int overflow=0x7f070048;
         public static final int picker=0x7f070045;
         public static final int rasp=0x7f07003e;
-        public static final int saveForToday=0x7f070047;
         public static final int scrollView1=0x7f070000;
-        public static final int settings=0x7f07004a;
+        public static final int settings=0x7f070049;
         public static final int spinner1=0x7f070039;
         public static final int students=0x7f070042;
         public static final int tableLayout1=0x7f070001;

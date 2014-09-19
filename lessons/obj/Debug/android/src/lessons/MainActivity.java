@@ -11,6 +11,7 @@ public class MainActivity
 		__md_methods = 
 			"n_onPrepareOptionsMenu:(Landroid/view/Menu;)Z:GetOnPrepareOptionsMenu_Landroid_view_Menu_Handler\n" +
 			"n_onOptionsItemSelected:(Landroid/view/MenuItem;)Z:GetOnOptionsItemSelected_Landroid_view_MenuItem_Handler\n" +
+			"n_onResume:()V:GetOnResumeHandler\n" +
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onKeyUp:(ILandroid/view/KeyEvent;)Z:GetOnKeyUp_ILandroid_view_KeyEvent_Handler\n" +
 			"";
@@ -40,6 +41,14 @@ public class MainActivity
 	}
 
 	private native boolean n_onOptionsItemSelected (android.view.MenuItem p0);
+
+
+	public void onResume ()
+	{
+		n_onResume ();
+	}
+
+	private native void n_onResume ();
 
 
 	public void onCreate (android.os.Bundle p0)

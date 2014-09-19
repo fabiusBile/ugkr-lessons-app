@@ -62,12 +62,6 @@
             android:id="@+id/calendar"
             android:text="Календарь" />
     </RadioGroup>
-    <CheckBox
-        android:text="Сохранять расписание на сегодня"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/saveForToday"
-        android:layout_marginTop="47.1dp" />
     <Button
         android:text="О приложении"
         android:layout_width="match_parent"

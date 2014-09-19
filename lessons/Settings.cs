@@ -51,17 +51,17 @@ namespace lessons
 					savePref(false,"type");
 				}
 			};
+
 		}
 		public void savePref (bool val,string name)
 		{
-			//Сохраняет выбор группы 
-			GetPreferences (FileCreationMode.Private).Edit ().PutBoolean (name, val).Commit ();
+			GetSharedPreferences ("Settings",FileCreationMode.Private).Edit ().PutBoolean (name, val).Commit ();
 		}
 
 		public bool loadPref (string name)
 		{
-			if (GetPreferences (FileCreationMode.Private).Contains (name))
-				return	GetPreferences (FileCreationMode.Private).GetBoolean (name,false);
+			if (GetSharedPreferences ("Settings",FileCreationMode.Private).Contains (name))
+				return	GetSharedPreferences ("Settings",FileCreationMode.Private).GetBoolean (name,false);
 			else
 				return false;
 		}
