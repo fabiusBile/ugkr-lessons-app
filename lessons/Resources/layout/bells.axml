@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <TableLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/tableLayout1"
+        p1:stretchColumns="*"
+        p1:paddingLeft="50dp"
+        p1:paddingTop="30dp">
+        <TextView
+            p1:text="С понедельника по пятницу:"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:id="@+id/textView90"
+            p1:textStyle="bold"
+            p1:layout_height="31.4dp" />
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow1"
+            p1:layout_width="342.4dp">
+            <TextView
+                p1:text="0 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView51" />
+            <TextView
+                p1:text="07:25-08:25"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView52" />
+        </TableRow>
+        <TableRow
+            p1:id="@+id/tableRow2">
+            <TextView
+                p1:text="1 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView53" />
+            <TextView
+                p1:text="08:30-10:05"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView54" />
+        </TableRow>
+        <TableRow
+            p1:id="@+id/tableRow3">
+            <TextView
+                p1:text="2 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView55" />
+            <TextView
+                p1:text="10:15-11:50"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView56"
+                p1:layout_height="30.3dp" />
+        </TableRow>
+        <TextView
+            p1:text="40 минут большая перемена"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:id="@+id/textView92"
+            p1:layout_height="30.3dp"
+            p1:textStyle="bold" />
+        <TableRow
+            p1:id="@+id/tableRow4">
+            <TextView
+                p1:text="3 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView57" />
+            <TextView
+                p1:text="12:30-14:05"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView58" />
+        </TableRow>
+        <TableRow
+            p1:id="@+id/tableRow5">
+            <TextView
+                p1:text="4 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView59" />
+            <TextView
+                p1:text="14:14-15:50"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView60" />
+        </TableRow>
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow6">
+            <TextView
+                p1:text="5 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView61" />
+            <TextView
+                p1:text="16:00-17:35"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView62" />
+        </TableRow>
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow7">
+            <TextView
+                p1:text="6 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView63" />
+            <TextView
+                p1:text="17:45-19:20"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView64" />
+        </TableRow>
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow8">
+            <TextView
+                p1:text="7 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView65" />
+            <TextView
+                p1:text="19:30-21:05"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView66"
+                p1:layout_height="30.3dp" />
+        </TableRow>
+        <TextView
+            p1:text="На субботу:"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:id="@+id/textView91"
+            p1:layout_height="29.6dp"
+            p1:textStyle="bold" />
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow9">
+            <TextView
+                p1:text="0 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView67" />
+            <TextView
+                p1:text="08:00-09:00"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView68"
+                p1:layout_width="match_parent" />
+        </TableRow>
+        <TableRow
+            p1:id="@+id/tableRow16">
+            <TextView
+                p1:text="1 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView95" />
+            <TextView
+                p1:text="09:10-10:10"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView86" />
+        </TableRow>
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow10">
+            <TextView
+                p1:text="2 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView85" />
+            <TextView
+                p1:text="10:20-11:20"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView70" />
+        </TableRow>
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow11">
+            <TextView
+                p1:text="3 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView69" />
+            <TextView
+                p1:text="11:30-12:30"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView88" />
+        </TableRow>
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow12">
+            <TextView
+                p1:text="4 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView87" />
+            <TextView
+                p1:text="12:40-13:40"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView72" />
+        </TableRow>
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow13">
+            <TextView
+                p1:text="5 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView71" />
+            <TextView
+                p1:text="13:50-14:50"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView74" />
+        </TableRow>
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow14">
+            <TextView
+                p1:text="6 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView73" />
+            <TextView
+                p1:text="15:00-16:00"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView76" />
+        </TableRow>
+        <TableRow
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/tableRow15">
+            <TextView
+                p1:text="7 пара"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="0"
+                p1:id="@+id/textView75" />
+            <TextView
+                p1:text="16:10-17:10"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_column="1"
+                p1:id="@+id/textView94" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

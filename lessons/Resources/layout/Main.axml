@@ -28,8 +28,7 @@
                 <Spinner
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content"
-                    p1:id="@+id/spinner1"
-                    p1:entries="@array/groups" />
+                    p1:id="@+id/spinner1" />
                 <Button
                     p1:text="На сегодня"
                     p1:layout_width="match_parent"
@@ -44,19 +43,15 @@
                     p1:text="На выбранную дату:"
                     p1:layout_width="match_parent"
                     p1:layout_height="wrap_content"
-                    p1:id="@+id/toDate" />
-                <ProgressBar
-                    p1:layout_width="match_parent"
-                    p1:layout_height="wrap_content"
-                    p1:id="@+id/progressBar1"
-                    p1:visibility="invisible" />
+                    p1:id="@+id/toDate"
+                    p1:layout_marginBottom="1.2dp" />
                 <DatePicker
                     p1:layout_width="match_parent"
-                    p1:layout_height="match_parent"
+                    p1:layout_height="wrap_content"
                     p1:id="@+id/datePicker"
-                    p1:calendarViewShown="false" />
-            <!--                p1:calendarViewShown="false"-->
-            <!--                p1:spinnersShown="true" />-->
+                    p1:layout_marginBottom="30.8dp"
+                    p1:spinnersShown="false"
+                    p1:layout_marginTop="0.0dp" />ß
             </LinearLayout>
             <LinearLayout
                 p1:orientation="vertical"
@@ -65,50 +60,23 @@
                 p1:minWidth="25px"
                 p1:id="@+id/rasp"
                 p1:minHeight="25px">
-                <TextView
-                    p1:text="Расписание:"
-                    p1:layout_width="match_parent"
-                    p1:layout_height="wrap_content"
-                    p1:id="@+id/text"
-                    p1:textSize="18dp"
-                    p1:typeface="normal"
-                    p1:textStyle="normal"
-                    p1:textColor="#ff000000" />
+             	<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+   					p1:minWidth="25px"
+   					p1:minHeight="25px"
+   				 	p1:layout_width="match_parent"
+   	 				p1:layout_height="match_parent"
+    				p1:id="@+id/scrollView2">
+	                <TextView
+	                    p1:text="Расписание:"
+	                    p1:layout_width="match_parent"
+	                    p1:layout_height="wrap_content"
+	                    p1:id="@+id/text"
+	                    p1:textSize="18dp"
+	                    p1:typeface="normal"
+	                    p1:textStyle="normal"
+	                    p1:textColor="#ff000000" />
+                    </ScrollView>
             </LinearLayout>
         </ViewSwitcher>
-        <LinearLayout
-            p1:orientation="vertical"
-            p1:minWidth="25px"
-            p1:minHeight="25px"
-            p1:layout_width="match_parent"
-            p1:layout_height="match_parent"
-            p1:id="@+id/settings">
-            <TextView
-                p1:text="Настройки"
-                p1:textAppearance="?android:attr/textAppearanceMedium"
-                p1:layout_width="match_parent"
-                p1:layout_height="42.4dp"
-                p1:id="@+id/textView1"
-                p1:layout_marginTop="15.4dp"
-                p1:layout_marginLeft="0.0dp" />
-            <RadioGroup
-                p1:minWidth="25px"
-                p1:minHeight="25px"
-                p1:layout_width="match_parent"
-                p1:layout_height="wrap_content"
-                p1:id="@+id/type">
-                <RadioButton
-                    p1:layout_width="match_parent"
-                    p1:layout_height="wrap_content"
-                    p1:checked="true"
-                    p1:text="Расписание учебных групп"
-                    p1:id="@+id/students" />
-                <RadioButton
-                    p1:layout_width="wrap_content"
-                    p1:layout_height="wrap_content"
-                    p1:text="Расписание преподователей"
-                    p1:id="@+id/teachers" />
-            </RadioGroup>
-        </LinearLayout>
     </ViewSwitcher>
 </LinearLayout>

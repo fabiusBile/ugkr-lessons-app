@@ -12,3 +12,11 @@
 /Users/fabius/Projects/lessons/lessons/obj/Release/lessons.dll
 /Users/fabius/Projects/lessons/lessons/obj/Release/lessons.dll.mdb
 /Users/fabius/Projects/lessons/lessons/obj/Release/MonoAndroid,Version=v2.3.AssemblyAttribute.cs
+/Users/fabius/Projects/lessons/lessons/obj/Release/res/drawable-hdpi/ic_action_overflow.png
+/Users/fabius/Projects/lessons/lessons/obj/Release/res/drawable-mdpi/ic_action_overflow.png
+/Users/fabius/Projects/lessons/lessons/obj/Release/res/drawable-xhdpi/ic_action_overflow.png
+/Users/fabius/Projects/lessons/lessons/obj/Release/res/drawable-xxhdpi/ic_action_overflow.png
+/Users/fabius/Projects/lessons/lessons/obj/Release/res/menu/actionbar.xml
+/Users/fabius/Projects/lessons/lessons/obj/Release/res/menu/popup.xml
+/Users/fabius/Projects/lessons/lessons/obj/Release/res/layout/settings.xml
+/Users/fabius/Projects/lessons/lessons/obj/Release/res/layout/bells.xml

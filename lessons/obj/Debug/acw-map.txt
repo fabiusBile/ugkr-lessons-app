@@ -1,1 +1,3 @@
 lessons.MainActivity;lessons.MainActivity
+lessons.Settings;lessons.Settings
+lessons.bells;lessons.bells
