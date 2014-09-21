@@ -32,9 +32,9 @@ namespace lessons
 			 else
 				date.Check (Resource.Id.picker);
 			if (loadPref ("type")) 
-				type.Check (Resource.Id.students);
-			else
 				type.Check (Resource.Id.teachers);
+			else
+				type.Check (Resource.Id.students);
 			date.CheckedChange += delegate {
 				if (date.CheckedRadioButtonId==Resource.Id.calendar){
 					savePref(true,"date");
@@ -44,14 +44,13 @@ namespace lessons
 				}
 			};
 			type.CheckedChange += delegate {
-				if (date.CheckedRadioButtonId==Resource.Id.students){
-					savePref(true,"type");
-				}
-				else{
+				if (type.CheckedRadioButtonId==Resource.Id.students){
 					savePref(false,"type");
 				}
+				else{
+					savePref(true,"type");
+				}
 			};
-
 		}
 		public void savePref (bool val,string name)
 		{

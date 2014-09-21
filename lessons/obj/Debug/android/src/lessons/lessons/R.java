@@ -21,20 +21,20 @@ public final class R {
         public static final int icon=0x7f020001;
     }
     public static final class id {
-        public static final int about=0x7f070047;
         public static final int bells=0x7f07004a;
-        public static final int calendar=0x7f070046;
+        public static final int calendar=0x7f070047;
         public static final int datePicker=0x7f07003d;
-        public static final int dateSelectType=0x7f070044;
+        public static final int dateSelectType=0x7f070045;
         public static final int linearLayout1=0x7f070035;
         public static final int main=0x7f070038;
         public static final int overflow=0x7f070048;
-        public static final int picker=0x7f070045;
+        public static final int picker=0x7f070046;
         public static final int rasp=0x7f07003e;
         public static final int scrollView1=0x7f070000;
+        public static final int scrollView2=0x7f07003f;
         public static final int settings=0x7f070049;
         public static final int spinner1=0x7f070039;
-        public static final int students=0x7f070042;
+        public static final int students=0x7f070043;
         public static final int tableLayout1=0x7f070001;
         public static final int tableRow1=0x7f070003;
         public static final int tableRow10=0x7f070023;
@@ -52,9 +52,9 @@ public final class R {
         public static final int tableRow7=0x7f070016;
         public static final int tableRow8=0x7f070019;
         public static final int tableRow9=0x7f07001d;
-        public static final int teachers=0x7f070043;
-        public static final int text=0x7f07003f;
-        public static final int textView1=0x7f070040;
+        public static final int teachers=0x7f070044;
+        public static final int text=0x7f070040;
+        public static final int textView1=0x7f070041;
         public static final int textView51=0x7f070004;
         public static final int textView52=0x7f070005;
         public static final int textView53=0x7f070007;
@@ -93,7 +93,7 @@ public final class R {
         public static final int toDate=0x7f07003c;
         public static final int today=0x7f07003a;
         public static final int tomorrow=0x7f07003b;
-        public static final int type=0x7f070041;
+        public static final int type=0x7f070042;
         public static final int viewSwitcher1=0x7f070037;
         public static final int viewSwitcherMain=0x7f070036;
     }

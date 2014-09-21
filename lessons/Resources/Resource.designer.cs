@@ -88,20 +88,17 @@ namespace lessons
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070047
-			public const int about = 2131165255;
-			
 			// aapt resource value: 0x7f07004a
 			public const int bells = 2131165258;
 			
-			// aapt resource value: 0x7f070046
-			public const int calendar = 2131165254;
+			// aapt resource value: 0x7f070047
+			public const int calendar = 2131165255;
 			
 			// aapt resource value: 0x7f07003d
 			public const int datePicker = 2131165245;
 			
-			// aapt resource value: 0x7f070044
-			public const int dateSelectType = 2131165252;
+			// aapt resource value: 0x7f070045
+			public const int dateSelectType = 2131165253;
 			
 			// aapt resource value: 0x7f070035
 			public const int linearLayout1 = 2131165237;
@@ -112,8 +109,8 @@ namespace lessons
 			// aapt resource value: 0x7f070048
 			public const int overflow = 2131165256;
 			
-			// aapt resource value: 0x7f070045
-			public const int picker = 2131165253;
+			// aapt resource value: 0x7f070046
+			public const int picker = 2131165254;
 			
 			// aapt resource value: 0x7f07003e
 			public const int rasp = 2131165246;
@@ -121,14 +118,17 @@ namespace lessons
 			// aapt resource value: 0x7f070000
 			public const int scrollView1 = 2131165184;
 			
+			// aapt resource value: 0x7f07003f
+			public const int scrollView2 = 2131165247;
+			
 			// aapt resource value: 0x7f070049
 			public const int settings = 2131165257;
 			
 			// aapt resource value: 0x7f070039
 			public const int spinner1 = 2131165241;
 			
-			// aapt resource value: 0x7f070042
-			public const int students = 2131165250;
+			// aapt resource value: 0x7f070043
+			public const int students = 2131165251;
 			
 			// aapt resource value: 0x7f070001
 			public const int tableLayout1 = 2131165185;
@@ -181,14 +181,14 @@ namespace lessons
 			// aapt resource value: 0x7f07001d
 			public const int tableRow9 = 2131165213;
 			
-			// aapt resource value: 0x7f070043
-			public const int teachers = 2131165251;
-			
-			// aapt resource value: 0x7f07003f
-			public const int text = 2131165247;
+			// aapt resource value: 0x7f070044
+			public const int teachers = 2131165252;
 			
 			// aapt resource value: 0x7f070040
-			public const int textView1 = 2131165248;
+			public const int text = 2131165248;
+			
+			// aapt resource value: 0x7f070041
+			public const int textView1 = 2131165249;
 			
 			// aapt resource value: 0x7f070004
 			public const int textView51 = 2131165188;
@@ -304,8 +304,8 @@ namespace lessons
 			// aapt resource value: 0x7f07003b
 			public const int tomorrow = 2131165243;
 			
-			// aapt resource value: 0x7f070041
-			public const int type = 2131165249;
+			// aapt resource value: 0x7f070042
+			public const int type = 2131165250;
 			
 			// aapt resource value: 0x7f070037
 			public const int viewSwitcher1 = 2131165239;
