@@ -44,8 +44,10 @@ namespace lessons
 	
 
 		public override bool OnPrepareOptionsMenu(IMenu menu) {
-			MenuInflater.Inflate(Resource.Menu.actionbar, menu);
-			return base.OnPrepareOptionsMenu(menu);
+			if (!menu.HasVisibleItems) {
+				MenuInflater.Inflate (Resource.Menu.actionbar, menu);
+			}
+				return base.OnPrepareOptionsMenu(menu);
 		}
 		public override bool OnOptionsItemSelected(IMenuItem item)
 		{
@@ -58,10 +60,10 @@ namespace lessons
 		//public override bool OnMenuItemClick(IMenuItem item)
 		public void showPopup(View v){
 			PopupMenu popup = new PopupMenu (this, v);
-			MenuInflater inflater = popup.MenuInflater;
+			MenuInflater inflater = popup.MenuInflater;	
 			popup.Inflate (Resource.Menu.popup);
 			popup.MenuItemClick += (s1,item) => {
-				switch(item.Item.ItemId){
+				switch(item.Item.ItemId){	
 				case Resource.Id.settings:
 					Intent i = new Intent(this,typeof(Settings));
 						StartActivity(i);
@@ -134,9 +136,7 @@ namespace lessons
 				} else {
 					text.Text = "Проверьте соединение с интернетом";
 					viewSwitcher.ShowNext ();
-
 				}
-				
 			};
 			OnDate.Click += delegate {//На дату
 				if (cm.ActiveNetworkInfo != null) {
@@ -144,7 +144,6 @@ namespace lessons
 				} else {
 					text.Text = "Проверьте соединение с интернетом";
 					viewSwitcher.ShowNext ();
-
 				}
 			};
 
@@ -157,14 +156,11 @@ namespace lessons
 			string t;
 			if (type) {
 				t = teachers [spinner.SelectedItemId];
-				Console.WriteLine (teachers [spinner.SelectedItemId]);
 			} else{
 				t = groups [spinner.SelectedItemId];
-				Console.WriteLine (teachers [spinner.SelectedItemId]);
 			}
 			//Построение урл
 			string url = "http://study.ugkr.ru/rasp.php" + act + t  + "&date=" + date.Year.ToString () + '-' + date.Month.ToString () + '-' + date.Day.ToString (); 
-			Console.WriteLine (url);
 			if (date.ToBinary () == DateTime.Today.ToBinary ())  //В зависимости от даты, будет написано "расписание на сегодня",
 				curDate = "сегодня";							// "расписание на завтра" или "расписание на дату..."
 			else if (date.ToBinary () == DateTime.Today.AddDays (1).ToBinary ())
@@ -252,7 +248,11 @@ namespace lessons
 
 				}
 				return true;
-			} else
+			} else if (keyCode == Keycode.Menu) {
+				showPopup (FindViewById<View> (Resource.Id.overflow));
+				return true;
+			}
+			else
 				return base.OnKeyUp (keyCode, e);
 		}
 
