@@ -1,1 +1,1 @@
-/Users/fabius/Projects/lessons/lessons/bin/Debug/lessons.dll
+/Users/Dock/ugkr-lessons-app/lessons/bin/Debug/lessons.dll
