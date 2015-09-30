@@ -11,7 +11,7 @@ public class bells
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("lessons.bells, lessons, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", bells.class, __md_methods);
+		mono.android.Runtime.register ("lessons.bells, lessons, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null", bells.class, __md_methods);
 	}
 
 
@@ -19,7 +19,7 @@ public class bells
 	{
 		super ();
 		if (getClass () == bells.class)
-			mono.android.TypeManager.Activate ("lessons.bells, lessons, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("lessons.bells, lessons, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

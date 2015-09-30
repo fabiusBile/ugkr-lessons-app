@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.2" package="lessons.lessons" android:installLocation="preferExternal">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.2" package="ugkr.lessons" android:installLocation="preferExternal" android:versionCode="2">
 	<uses-sdk />
-	<application android:label="Расписание УГКР" android:icon="@drawable/icon">
+	<application android:label="Расписание УКРТБ" android:icon="@drawable/icon"  android:debuggable="false">
 	</application>
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

@@ -25,7 +25,7 @@ using Android.Text;
 
 namespace lessons
 {
-	[Activity (Label = "Расписание УГКР", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = Android.Content.PM.ScreenOrientation.Nosensor, Theme = "@android:style/Theme.Holo.Light")]
+	[Activity (Label = "Расписание УКРТБ", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = Android.Content.PM.ScreenOrientation.Nosensor, Theme = "@android:style/Theme.Holo.Light")]
 	public class MainActivity : Activity
 	{
 		static string[] groups;//Массив, содержащий список групп
@@ -112,20 +112,21 @@ namespace lessons
 			};
 			//Обработчики нажатий кнопок
 			today.Click += delegate { //На сегодня
-				if (cm.ActiveNetworkInfo != null) { //Если присутствует соединение с интернетом - запустить функцию, 
-					bool todayType = GetPreferences (FileCreationMode.Private).GetBoolean("todayType",false);
-					long todayId = GetPreferences (FileCreationMode.Private).GetLong("todayId",-1);
-					if (todayType!=type||todayId!=spinner.SelectedItemId||GetPreferences (FileCreationMode.Private).GetLong("todayDate",(DateTime.Today.ToBinary() -1))!=dateToday.ToBinary()){
+				bool todayType = GetPreferences (FileCreationMode.Private).GetBoolean("todayType",false);
+				long todayId = GetPreferences (FileCreationMode.Private).GetLong("todayId",-1);
+				if (todayType!=type||todayId!=spinner.SelectedItemId||GetPreferences (FileCreationMode.Private).GetLong("todayDate",(DateTime.Today.ToBinary() -1))!=dateToday.ToBinary()){
+					if (cm.ActiveNetworkInfo != null) { //Если присутствует соединение с интернетом - запустить функцию, 
 						StartLoadingThread (dateToday);// получающую расписание с сайта
-					} else{
-						text.Text=GetPreferences (FileCreationMode.Private).GetString("ForToday","Расписание на сегодня отсутствует");
+					} else {
+						text.Text = "Проверьте соединение с интернетом";//Иначе, выводит ошибку
 						viewSwitcher.ShowNext ();
-					}
-				} else {
-					text.Text = "Проверьте соединение с интернетом";//Иначе, выводит ошибку
-					viewSwitcher.ShowNext ();
 
+					}
+				} else{
+					text.Text=GetPreferences (FileCreationMode.Private).GetString("ForToday","Расписание на сегодня отсутствует");
+					viewSwitcher.ShowNext ();
 				}
+
 
 			};
 			tomorrow.Click += delegate { //На завтра
@@ -184,7 +185,7 @@ namespace lessons
 				} else
 				LoadThread.Abort ();
 			};
-			PageLoad pageLoad = new PageLoad (url, progressDialog,type); //Посылает функции, запускающей поток загрузки расписания
+			new PageLoad (url, progressDialog,type); //Посылает функции, запускающей поток загрузки расписания
 			//путь до страницы с ним и всплывающее окно загрузки
 
 		}
@@ -249,7 +250,8 @@ namespace lessons
 
 				} else if (viewSwitcherMain.CurrentView != viewSwitcherMain.GetChildAt (0)) {
 					viewSwitcherMain.ShowPrevious ();
-
+				} else {
+					Finish();
 				}
 				return true;
 			} else

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.2" package="lessons.lessons" android:installLocation="preferExternal">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.2" package="ugkr.lessons" android:installLocation="preferExternal" android:versionCode="2">
   <uses-sdk android:minSdkVersion="15" />
-  <application android:label="Расписание УГКР" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="Расписание УГКР" android:screenOrientation="nosensor" android:theme="@android:style/Theme.Holo.Light" android:name="lessons.MainActivity">
+  <application android:label="Расписание УКРТБ" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:label="Расписание УКРТБ" android:screenOrientation="nosensor" android:theme="@android:style/Theme.Holo.Light" android:name="lessons.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -10,11 +10,11 @@
     </activity>
     <activity android:icon="@drawable/icon" android:label="Настройки" android:screenOrientation="nosensor" android:theme="@android:style/Theme.Holo.Light" android:name="lessons.Settings" />
     <activity android:icon="@drawable/icon" android:label="Расписание звонков" android:screenOrientation="nosensor" android:theme="@android:style/Theme.Holo.Light" android:name="lessons.bells" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="lessons.lessons.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="ugkr.lessons.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.lessons.lessons" />
+        <category android:name="mono.android.intent.category.SEPPUKU.ugkr.lessons" />
       </intent-filter>
     </receiver>
   </application>

@@ -41,3 +41,6 @@
 /Users/Dock/ugkr-lessons-app/lessons/obj/Release/uploadflags.txt
 /Users/Dock/ugkr-lessons-app/lessons/obj/Release/lessons.dll
 /Users/Dock/ugkr-lessons-app/lessons/obj/Release/lessons.dll.mdb
+/Users/Dock/ugkr-lessons-app/lessons/bin/Release/ugkr.lessons.apk
+/Users/Dock/ugkr-lessons-app/lessons/obj/Release/android/bin/ugkr.lessons.apk
+/Users/Dock/ugkr-lessons-app/lessons/bin/Release/ugkr.lessons-Signed.apk
